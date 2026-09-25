@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD de frases</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="conteudo-cabecalho">
+        <div class="logo">
+          <img src="assets/imagens/logo.png" alt="">
+          <h1>Trechos de músicas,<br> citações de livros e
+            <br> <strong>suas melhores ideias
+            <br> num só lugar!</strong>
+          </h1>
+        </div>
+        <div class="imagem-cabecalho">
+          <img 
+            src="assets/imagens/computador-cabecalho.png" 
+            alt="">
+        </div>
+      </div>
+    </header>
+    <main class="background-overlay">
+      <div class="overlay"></div>
+      <div class="overlay overlay-color"></div>
+      <h2>Adicione uma frase nova:</h2>
+      <section id="form-container">
+        <form id="frases-form">
+          <input type="hidden" id="frases-id" />
+          <label for="frases-conteudo">Frase
+          </label>
+          <textarea 
+            id="frases-conteudo" 
+            placeholder="Digite suas frases" 
+            required>
+          </textarea>
+          <label 
+            for="frases-autoria">
+              Autoria ou Fonte
+            </label>
+          <input 
+            type="text" 
+            id="frases-autoria" 
+            placeholder="Insira a autoria ou fonte" 
+            required />
+          <div class="form-botoes">
+            <button 
+              type="submit" 
+              id="botao-salvar">
+              Adicionar
+            </button>
+            <button 
+              type="button" 
+              id="botao-cancelar">
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </section>
+      <span></span>
+      <section id="lista-frases-container">
+        <h3>Meu Mural</h3>
+        <ul id="lista-frases"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;
+        Projeto fictício sem fins comerciais.</p>
+    </footer>
+  </body>
+</html>
