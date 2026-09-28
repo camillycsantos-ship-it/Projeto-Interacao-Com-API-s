@@ -2,7 +2,7 @@
 const api = {
     async buscarFrases() {
         try{
-            const response = await fetch('https://localhost:3000/frases')
+            const response = await fetch('http://localhost:3000/frases')
             return await response.json()
         }
         catch{

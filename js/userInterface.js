@@ -5,10 +5,21 @@ const userInterface = {
         const listaFrases = document.getElementById("lista-frases")
 
         try{
-            const frases = api.buscarFrases()
-            listaFrases.onbeforematch(frases => {
-                listaFrases.innerHTML += 
+            const frases = await api.buscarFrases()
+            frases.forEach(frase => {
+                listaFrases.innerHTML += `
+                <li class="li-frases" data-id="${frase.id}">
+                <img src="assets/imagens/aspas-azuis.png" class="icone-aspas">
+                <div class="frases-conteudo">${frase.conteudo}</div>
+                <div class="frases-autoria">${frase.autoria}</div>
+                </li>
+                `
             })
+        }
+        catch {
+            alert('Erro ao renderizar frases')
         }
     }
 }
+
+export default userInterface;
