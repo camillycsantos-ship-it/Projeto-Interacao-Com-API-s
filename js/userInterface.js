@@ -6,21 +6,43 @@ const userInterface = {
 
         try{
             const frases = await api.buscarFrases()
-            frases.forEach(frase => {
-                listaFrases.innerHTML += `
-                <li class="li-frases" data-id="${frase.id}">
-                <img src="assets/imagens/aspas-azuis.png" class="icone-aspas">
-                <div class="frases-conteudo">${frase.conteudo}</div>
-                <div class="frases-autoria">${frase.autoria}</div>
-                </li>
-                `
-            })
+            frases.forEach(userInterface.adicionarFrases)
         }
         catch {
             alert('Erro ao renderizar frases')
-            throw console.error();
+            throw error
             
         }
+    },
+
+    adicionarFrases(){
+        const listaFrases = document.getElementById("lista-frases");
+        const li = document.createElement("li");
+        li.setAttribute("data-id", frase.id)
+        li.classList.add("li-frases")
+
+        //ADICIONANDO A IMAGEM DAS ASPAS
+        const iconeAspas = document.createElement("img")
+        iconeAspas.src = "assets/imagens/aspas-azuis.png"
+        iconeAspas.alt = "Aspas Azuis"
+        iconeAspas.classList.add("icone-aspas")
+
+        //CONSTRUIR A ESTRUTURA DO CONTEÚDO DA FRASE
+        const fraseConteudo = document.createElement("div")
+        fraseConteudo.textContent = frase.conteudo
+        fraseConteudo.classList.add("frases-conteudo")
+
+        //CONSTRUIR A ESTRUTURA DA AUTORIA DA FRASE
+        const fraseAutoria = document.createElement("div")
+        fraseAutoria.textContent = frase.autoria
+        fraseAutoria.classList.add("frases-autoria")
+
+        //DEFININDO A HIERARQUIA ENTRE AS TAGS (<li> , <img> , <div> )
+        li.appendChild(iconeAspas)
+        li.appendChild(fraseConteudo)
+        li.appendChild(fraseAutoria)
+        listaFrases.appendChild(li)
+
     }
 }
 
