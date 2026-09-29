@@ -18,6 +18,8 @@ const userInterface = {
         }
         catch {
             alert('Erro ao renderizar frases')
+            throw console.error();
+            
         }
     }
 }

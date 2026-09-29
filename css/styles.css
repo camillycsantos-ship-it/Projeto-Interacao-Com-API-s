@@ -43,13 +43,13 @@ main {
 }
 
 .overlay-color {
-  background-color: #F4F4F4;
+  background-color: #041832;
 }
 
 
 header {
   padding: 112px 240px 112px 360px;
-  background: var(--Azul-Dark, #041832);
+  background:  #041832;
 }
 
 .conteudo-cabecalho {
@@ -63,6 +63,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  color: #041832;
 }
 
 header .logo img {
@@ -71,7 +72,7 @@ header .logo img {
 
 header .logo h1 {
   color: var(--Baby-blue, #DBE4EF);
-  font-family: "Poppins", sans-serif;
+  font-family: "sans-serif";
   align-self: center;
   font-size: 52px;
   font-weight: 300;
@@ -95,7 +96,7 @@ footer {
 h2, h3 {
   color: var(--Azul-Dark, #041832);
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "sans-serif";
   font-size: 44px;
   font-style: normal;
   font-weight: 600;
@@ -111,7 +112,7 @@ h2, h3 {
   align-self: center;
   justify-content: center;
   border-radius: 16px;
-  background: #FFF;
+  background: #041832;
   box-shadow: 8px 8px 20px 0px rgba(4, 24, 50, 0.08);
   width: 100%;
   max-width: 712px;
@@ -122,6 +123,7 @@ h2, h3 {
   display: flex;
   flex-direction: column;
   width: 100%;
+  
 }
 
 #frases-conteudo, #frases-autoria {
@@ -129,7 +131,8 @@ h2, h3 {
   border-radius: 8px;
   background: var(--Cinza-claro, #EDF0F4);
   word-wrap: break-word; 
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
+  
 }
 
 #frases-conteudo {
@@ -139,11 +142,12 @@ h2, h3 {
 #frases-form label {
   margin-bottom: 16px;
   color: var(--Azul-Dark, #041832);
-  font-family: "Poppins", sans-serif;
+  font-family: "sans-serif";
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  color: #DBE4EF;
 }
 
 #frases-conteudo::placeholder,  #frases-autoria::placeholder{
@@ -208,12 +212,13 @@ h2, h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 32px;
+  font-family: "Verdana", Tahoma, sans-serif;
 }
 
 .li-frases {
   position: relative;
   padding: 16px;
-  background: var(--Branco, #FFF);
+  background: var(--Branco, #041832);
   box-shadow: 8px 8px 0px 0px #154580;
   flex: 1 1 calc(33.333% - 24px);
   max-width: calc(33.333% - 24px);
@@ -236,8 +241,8 @@ h2, h3 {
 
 .frases-conteudo, .frases-autoria {
   margin-left: 20px; 
-  color: var(--Cinza, #444);
-  font-family: "Roboto Mono";
+  color: #ffff;
+  font-family: "Verdana", Tahoma, sans-serif;
   font-style: normal;
   line-height: normal;
   margin-bottom: 16px; 
