@@ -1,80 +1,71 @@
-{ "frases": [
-
+{
+  "frases": [
     {
-        "id": "1",
-        "conteudo": "Eles querem que você mude, depois reclamam que você mudou.",
-        "autoria": "BK'"
+      "id": "1",
+      "conteudo": "Eles querem que você mude, depois reclamam que você mudou.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "2",
-        "conteudo": "Se o topo é a solidão, eu quero a solidão do topo.", "autoria": "BK'"
+      "id": "2",
+      "conteudo": "Se o topo é a solidão, eu quero a solidão do topo.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "3",
-        "conteudo": "Como explicar pra quem nunca teve nada, que o milhão na conta não muda a sua alma?",
-        "autoria": "BK'"
+      "id": "3",
+      "conteudo": "Como explicar pra quem nunca teve nada, que o milhão na conta não muda a sua alma?",
+      "autoria": "BK'"
     },
-
     {
-        "id": "4",
-        "conteudo": "Onde o dinheiro compra tudo, a dignidade é o que custa mais caro.",
-        "autoria": "BK'"
+      "id": "4",
+      "conteudo": "Onde o dinheiro compra tudo, a dignidade é o que custa mais caro.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "5",
-        "conteudo": "Dizem que o tempo cura tudo, mas o tempo só passa enquanto a ferida continua abrindo.",
-        "autoria": "BK'"
+      "id": "5",
+      "conteudo": "Dizem que o tempo cura tudo, mas o tempo só passa enquanto a ferida continua abrindo.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "6",
-        "conteudo": "Antes de querer salvar o mundo, tenta salvar a si mesmo.",
-        "autoria": "BK'"
+      "id": "6",
+      "conteudo": "Antes de querer salvar o mundo, tenta salvar a si mesmo.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "7",
-        "conteudo": "Nós somos reis sem coroas, governando as nossas próprias mentes.",
-        "autoria": "BK'"
+      "id": "7",
+      "conteudo": "Nós somos reis sem coroas, governando as nossas próprias mentes.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "8",
-        "conteudo": "Eles criam as regras do jogo e depois te julgam por  jogar.",
-        "autoria": "BK'"
+      "id": "8",
+      "conteudo": "Eles criam as regras do jogo e depois te julgam por  jogar.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "9",
-        "conteudo": "A caneta ainda é mais forte que o gatilho.",
-        "autoria": "BK'"
+      "id": "9",
+      "conteudo": "A caneta ainda é mais forte que o gatilho.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "10",
-        "conteudo": "Vivendo entre o inferno da realidade e o paraíso do sonho.",
-        "autoria": "BK'"
+      "id": "10",
+      "conteudo": "Vivendo entre o inferno da realidade e o paraíso do sonho.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "11",
-        "conteudo": "Quem tem pressa de chegar, às vezes esquece de viver o caminho.",
-        "autoria": "BK'"
+      "id": "11",
+      "conteudo": "Quem tem pressa de chegar, às vezes esquece de viver o caminho.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "12",
-        "conteudo": "Meus blocos de notas valem mais que o seu banco de dados.",
-        "autoria": "BK'"
+      "id": "12",
+      "conteudo": "Meus blocos de notas valem mais que o seu banco de dados.",
+      "autoria": "BK'"
     },
-
     {
-        "id": "13",
-        "conteudo": "Muitos querem o seu sucesso, mas poucos suportam ver você vencer.",
-        "autoria": "BK'"
+      "id": "13",
+      "conteudo": "Muitos querem o seu sucesso, mas poucos suportam ver você vencer.",
+      "autoria": "BK'"
     }
-]
+
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

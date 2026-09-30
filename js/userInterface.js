@@ -15,7 +15,7 @@ const userInterface = {
         }
     },
 
-    adicionarFrases(){
+    adicionarFrases(frase){
         const listaFrases = document.getElementById("lista-frases");
         const li = document.createElement("li");
         li.setAttribute("data-id", frase.id)
@@ -43,7 +43,19 @@ const userInterface = {
         li.appendChild(fraseAutoria)
         listaFrases.appendChild(li)
 
+    const botaoExcluir = document.createElement("button")
+    botaoExcluir.classList.add("botao-excluir")
+    botaoExcluir.onclick = async () => {
+        try{
+            await api.excluirFrases(frase.id)
+            userInterface.renderizarFrases();
+        }
+        catch(error){
+            alert('Erro ao excluir frase')
+        }
     }
+}
+
 }
 
 export default userInterface;

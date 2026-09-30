@@ -11,14 +11,14 @@ const api = {
         }
     },
 
-    async salvarFrases() {
+    async salvarFrases(frase) {
         try{
             const response = await fetch('http://localhost:3000/frases',{
-                Method: "POST",
-                Headers: {
+                method: "POST",
+                headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(frases)
+                body: JSON.stringify(frase)
             })
             return await response.json()
         }
@@ -26,7 +26,18 @@ const api = {
             alert('Erro ao salvar frases')
             throw error
         }
+    },
+    
+    async excluirFrases(id){
+        try{
+            const response = await fetch(`http://localhost:3000/frases/${id}`, {
+                method: "DELETE"
+            })
+        }
+        catch{
+            alert('Erro ao deletar frase')
+            throw error
+        }
     }
-
 }
 export default api;
