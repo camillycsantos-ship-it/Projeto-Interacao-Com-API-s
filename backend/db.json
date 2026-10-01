@@ -59,13 +59,7 @@
       "id": "12",
       "conteudo": "Meus blocos de notas valem mais que o seu banco de dados.",
       "autoria": "BK'"
-    },
-    {
-      "id": "13",
-      "conteudo": "Muitos querem o seu sucesso, mas poucos suportam ver você vencer.",
-      "autoria": "BK'"
     }
-
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

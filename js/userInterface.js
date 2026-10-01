@@ -54,6 +54,13 @@ const userInterface = {
             alert('Erro ao excluir frase')
         }
     }
+
+    const iconeExcluir = document.createElement("img")
+    iconeExcluir.src = "assets/imagens/icone-excluir.png";
+    iconeExcluir.alt = "Icone Excluir";
+    botaoExcluir.appendChild(iconeExcluir);
+    iconeAspas.appendChild(botaoExcluir);
+    li.appendChild(botaoExcluir);
 }
 
 }
